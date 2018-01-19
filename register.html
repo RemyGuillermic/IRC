@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IRC</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="nav-wrapper blue">
+          <a href="/" class="brand-logo">Register</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="login">Login</a></li>
+            <li><a href="register">Register</a></li>
+        </ul>
+    </div>
+</nav>
+</header>
+<main>
+    <form action="/register" method="post" id="formulaire_register">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="first_name" type="text" class="validate" name="username">
+                        <label for="username">Pseudo</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="first_name" type="text" class="validate" name="firstname">
+                        <label for="firstname">Nom</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="last_name" type="text" class="validate" name="lastname">
+                        <label for="lastname">Prénom</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="password" type="password" class="validate" name="password">
+                        <label for="password">Mot de passe</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="email" type="email" class="validate" name="email">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <button class="btn waves-effect waves-light" type="submit" id="envoi_message">Register
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </form>
+
+</main>
+<footer></footer>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+
+</body>
+</html>
